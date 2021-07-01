@@ -13,6 +13,7 @@ fn main() {
 		//let guess: u32 = guess.trim().parse().expect("Please enter a number!");
 		let guess: u32 = match guess.trim().parse() {
 			Ok(num) => num,
+			// TODO: add code here to show error message
 			Err(_) => continue,
 		};
 		println!("You guessed: {}", guess);
